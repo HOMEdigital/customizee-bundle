@@ -1,0 +1,4 @@
+services:
+#    home_customizee.example:
+#        class: Home\CustomizeeBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
