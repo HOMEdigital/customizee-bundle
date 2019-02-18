@@ -21,7 +21,7 @@ try{
 
     #-- remove headline field from all content elements ----------------------------------------------
     foreach($GLOBALS['TL_DCA']['tl_content']['palettes'] as $key=>$palette) {
-        if (strpos($palette, '{type_legend}') !== null) {
+        if (!is_array($palette) && strpos($palette, '{type_legend}') !== null) {
             $tl_content->addPaletteGroup('type', array('type'), $key, 1);
         }
     }
