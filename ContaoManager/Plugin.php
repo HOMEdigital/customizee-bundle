@@ -22,7 +22,7 @@ class Plugin implements BundlePluginInterface, RoutingPluginInterface
     {
         return [
             BundleConfig::create('Home\CustomizeeBundle\HomeCustomizeeBundle')
-                ->setLoadAfter(['Contao\CoreBundle\ContaoCoreBundle'])
+                ->setLoadAfter(['Contao\CoreBundle\ContaoCoreBundle','Home\KiteeBundle\Home\HomeKiteeBundle'])
                 ->setReplace(['customizee']),
         ];
     }
